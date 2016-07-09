@@ -27,5 +27,6 @@
     <dimen name="margin_bottom_home_fab">60dp</dimen>
     <dimen name="status_bar_height">25dp</dimen>
     <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_elevation_1">1dp</dimen>
     <dimen name="detail_backdrop_height">256dp</dimen>
 </resources>

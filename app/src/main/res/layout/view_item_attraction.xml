@@ -4,45 +4,48 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/margin_small"
+    android:background="@color/color_primary_light_two"
     card_view:cardElevation="@dimen/card_elevation"
     card_view:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
         android:orientation="vertical"
-        android:layout_margin="@dimen/margin_medium">
+        android:padding="@dimen/margin_medium">
 
         <TextView
             android:id="@+id/tv_attraction_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
-            android:textAppearance="?android:textAppearanceLarge"
             android:text="@string/tmp_title"
-            />
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/text_black_full" />
 
         <ImageView
             android:id="@+id/iv_stock_photo"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:scaleType="centerCrop"
             android:layout_marginTop="@dimen/margin_medium"
             android:adjustViewBounds="true"
-            android:src="@drawable/stock_photo_placeholder"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/stock_photo_placeholder" />
 
         <TextView
             android:id="@+id/tv_attraction_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:lineSpacingMultiplier="1.2"
             android:layout_marginTop="@dimen/margin_medium"
-            android:maxLines="4"
             android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="4"
             android:text="@string/tmp_body"
-            />
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/text_black_full" />
+
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

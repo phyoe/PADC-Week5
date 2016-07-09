@@ -1,11 +1,15 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
         <item name="colorPrimary">@color/color_primary_two</item>
         <item name="colorPrimaryDark">@color/color_primary_dark_two</item>
         <item name="colorAccent">@color/color_accent_two</item>
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -17,4 +21,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="AttractionDetailTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="AttractionDetailDesp">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
 </resources>
